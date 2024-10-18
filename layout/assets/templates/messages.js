@@ -4,8 +4,8 @@ const messageTemplates = {
         `,
         buttons: [
             [
-                {text: "Start", callback_data: "start_query"}, 
-                {text: "Rate us", callback_data: "rate"}
+                {text: "Start 🔥", callback_data: "start_query"}, 
+                {text: "Rate us ⭐", callback_data: "rate"}
             ],
         ]
         

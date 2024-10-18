@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    width: 100%;
+
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.header__inner {
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    
+    color: var(--common-text);
+}
+
+.header__connect_wallet {
+    display: flex;
+    gap: 0.4rem;
+
+    background-color: var(--accent);
+    color: var(--common-text);
+
+    border-radius: 0.4rem;
+    /* box-shadow: 0px 0px 0.8rem 0px var(--accent); */
+
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+
+    padding: 0.8rem 2.2rem;
+}
+.header__connect_wallet svg {
+    height: 1.4rem;
+    line-height: 1.4rem;
+
+    fill: var(--common-text);
+}

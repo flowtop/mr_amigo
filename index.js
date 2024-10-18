@@ -1,5 +1,5 @@
 import TelegramBot from "node-telegram-bot-api";
-import messageTemplates from "./layout/assets/json/messages.js";
+import messageTemplates from "./layout/assets/templates/messages.js";
 
 const token = process.env.TOKEN;
 
@@ -10,7 +10,7 @@ bot.on("message", async (msg) => {
     let chatID = msg.chat.id;
 
     if (msg.text == "/start") {
-        bot.sendPhoto(chatID, 'https://chicagofancypaws.com/wp-content/uploads/2022/09/the-4-mexican-dog-breeds.jpg', 
+        bot.sendPhoto(chatID, 'AgACAgIAAxkBAAMMZxEmgbDMyHYQPwgd_1V79cfsfV4AApLkMRvyG4lIz2ZSGML7bKgBAAMCAAN4AAM2BA', 
             {
                 caption: messageTemplates.start.text,
                 reply_markup: {
@@ -19,4 +19,6 @@ bot.on("message", async (msg) => {
             }
         );
     }
+    
+    console.log(msg);
 });
