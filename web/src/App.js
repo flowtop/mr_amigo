@@ -1,12 +1,12 @@
-import mrAmigoImg from "./media/mr_amigo.jpg";
 import React from "react";
 
 import './styles/index.css';
 
+// import mrAmigoImg from "./media/mr_amigo.jpg";
+
 import NewAmigo from "./pages/NewAmigo";
 import MyAmigos from "./pages/MyAmigos";
 import AMGWallet from "./pages/AMGWallet";
-
 
 function App() {
 
@@ -26,17 +26,17 @@ function App() {
 				</div>
 			</header>
 
-			<main>
+			<main className="main">
 				{
-					tabNum == 1 &&
+					tabNum === 1 &&
 					<NewAmigo />
 				}
 				{
-					tabNum == 2 &&
+					tabNum === 2 &&
 					<MyAmigos />
 				}
 				{
-					tabNum == 3 &&
+					tabNum === 3 &&
 					<AMGWallet />
 				}
 			</main>
@@ -44,7 +44,7 @@ function App() {
 			<nav className="nav">
 				<div className="container nav__inner">
 					<ul>
-						<li className={tabNum == 1 ? 'active' : ''} onClick={() => {
+						<li className={tabNum === 1 ? 'active' : ''} onClick={() => {
 							setTabNum(1)
 						}}>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -52,7 +52,7 @@ function App() {
 							</svg>
 							New Amigo
 						</li>
-						<li className={tabNum == 2 ? 'active' : ''} onClick={() => {
+						<li className={tabNum === 2 ? 'active' : ''} onClick={() => {
 							setTabNum(2)
 						}}>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -60,7 +60,7 @@ function App() {
 							</svg>
 							My Amigos
 						</li>
-						<li className={tabNum == 3 ? 'active' : ''} onClick={() => {
+						<li className={tabNum === 3 ? 'active' : ''} onClick={() => {
 							setTabNum(3)
 						}}>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
